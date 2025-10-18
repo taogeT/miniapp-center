@@ -15,6 +15,21 @@
       "skipFiles": ["<node_internals>/**"],
       "sourceMaps": true,
       "outFiles": ["${workspaceFolder}/apps/public-api/dist/**/*.(m|c|)js", "!**/node_modules/**"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug background-serivce with Nx",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["nx", "serve", "background-serivce"],
+      "env": {
+        "NODE_OPTIONS": "--inspect=9230"
+      },
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "skipFiles": ["<node_internals>/**"],
+      "sourceMaps": true,
+      "outFiles": ["${workspaceFolder}/apps/background-serivce/dist/**/*.(m|c|)js", "!**/node_modules/**"]
     }
   ]
 }
