@@ -1,0 +1,7 @@
+{
+  "type": "better-sqlite3",
+  "database": "var/test.sqlite",
+  "entityPrefix": "miniapp_",
+  "synchronize": true,
+  "logging": false
+}
